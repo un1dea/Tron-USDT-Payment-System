@@ -1,19 +1,3 @@
-/*
- Navicat Premium Dump SQL
-
- Source Server         : Claw.DB
- Source Server Type    : MySQL
- Source Server Version : 80030 (8.0.30)
- Source Host           : dbprovider.ap-southeast-1.clawcloudrun.com:32430
- Source Schema         : usdt_pay
-
- Target Server Type    : MySQL
- Target Server Version : 80030 (8.0.30)
- File Encoding         : 65001
-
- Date: 24/04/2025 12:09:00
-*/
-
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
