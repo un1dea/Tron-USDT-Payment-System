@@ -100,7 +100,6 @@ tron.api.key=<YOUR_TRONGRID_API_KEY>
    ```
    Congratulations, your order has been created successfully—please complete your payment promptly.
    ```
-   You’ll receive back the assigned TRON address and order ID in the JSON body.
 
 3. **Monitor order status**  
    - Orders automatically move to **PAID** or **EXPIRED**.  
