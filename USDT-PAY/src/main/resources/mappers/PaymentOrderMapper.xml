@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="life.vae.usdtpay.dao.PaymentOrderDao">
+    <insert id="insert">
+        INSERT INTO payment_order (id, address, amount, created_at, expires_at, status)
+        VALUES(#{id}, #{address}, #{amount}, #{createdAt}, #{expiresAt}, #{status})
+    </insert>
+    <update id="updateStatus">
+        UPDATE payment_order SET status = #{status} WHERE id = #{id}
+    </update>
+    <select id="findPending" resultType="life.vae.usdtpay.entity.PaymentOrder">
+        SELECT
+        id, address, amount, created_at, expires_at as expiresAt, status
+        FROM payment_order
+        WHERE status = 'PENDING'
+    </select>
+</mapper>
